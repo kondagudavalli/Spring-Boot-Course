@@ -1,0 +1,12 @@
+Important Topic in SpringBoot
+=========================
+1.	inversion of control(IOC)/dependency injection(di)
+2.	spring beans & bean lifecycle
+3.	application context
+4.	spring configuration(xml/java-based/annotations)
+5.	aspect-oriented programming(AOP)
+6.	spring MVC(model-view-controller)
+7.	transaction management
+8.	data access with spring(JDBC,ORM,JPA)
+9.	spring security
+10.	spring boot(auto-configuration&starter projects)
