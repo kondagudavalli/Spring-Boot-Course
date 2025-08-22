@@ -1,0 +1,11 @@
+   J2EE :
+=========
+Spring is used "EJB" Technology.
+EJB(Enterprise java Beans)
+It is  used to developing websites like Enterprised level.
+
+FOR A SPRING JDBC :
+===================
+1. Get access to *jdbc Template*.
+2. Prepare and execute an Sql query.
+3. Gather and process result.
