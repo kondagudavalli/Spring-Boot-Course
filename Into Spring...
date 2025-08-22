@@ -9,3 +9,79 @@ FOR A SPRING JDBC :
 1. Get access to *jdbc Template*.
 2. Prepare and execute an Sql query.
 3. Gather and process result.
+
+
+===================================
+ Spring mainly supports 2 concepts
+1) coding to interfaces is perfect. 
+ >By using of interfaces we can make objects as loosely  coupled.
+2)Spring is used Plain Old Java Object(POJO).
+what is POJO class?
+A class doesn't derive any other class and the variables must having the setters and getters then we called as POJO.
+
+Ex:
+public class POJOClass
+{
+private String message;
+public String getMessage()
+{
+return this.message;
+}
+public void setMessage(String message)
+{
+this.message=message;
+}
+}
+
+===================================
+Spring is a
+ >LightWeight - used only minimum funtionalities
+ >Aspect-oriented - by the updation of content it doesn't affect on previous 
+ >Inversion of control(IoC) - The responsibility of injection was taken  by the 3rd party.
+ >Dependency injection framework - cooneccting and wrapping data at runtime.
+
+ Note : Inversion of control(IoC) &  Dependency injection framework are used to make object as loose coupling.
+Ex:
+Tightly coupled
+================
+ Class AirtelSim
+{
+
+}
+class JioSim
+{
+
+}
+
+class Mobile
+{
+Mobile()
+{
+AirtelSim ar= new AirtelSim();
+}
+}
+
+  >>Here objects of Mobile&AirtelSim are tightly Coupled Now.
+
+Now by using of Spring to make it as loosely coupled using interfaces.
+======================================================================
+Ex:
+interface Sim
+{
+
+}
+class AirtelSim implements Sim
+{
+
+}
+class JioSim implements Sim
+{
+
+}
+
+Class Mobile
+{
+Sim s;
+}
+   >> Now Objects of Mobile & Sim are loosely coupled because we can pass/inject any object (AirtelSim/JioSim) of the subclasses of the sim interface at rumtime.
+
